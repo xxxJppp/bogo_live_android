@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="340dp"
+    android:background="@drawable/self_side_black_fifteen_cornor_bac"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ll_send_gift_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/top_title_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.bogokj.library.view.SDRecyclerView
+                android:id="@+id/gift_type_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#252525" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/view_pager_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_rechange_rl"
+            android:layout_below="@+id/top_title_rl"
+            android:orientation="vertical">
+
+
+            <com.fanwe.lib.viewpager.SDGridViewPager
+                android:id="@+id/vpg_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+            <com.fanwe.lib.viewpager.indicator.impl.PagerIndicator
+                android:id="@+id/view_pager_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_rechange_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/ll_charge"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:background="@drawable/bg_game_charge"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/ic_diamond" />
+
+                <TextView
+                    android:id="@+id/tv_diamonds"
+                    style="@style/res.Text.Shadow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="充值 > "
+                    android:textColor="#DE88FF"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_arrow_right_white"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_send"
+                style="@style/btn_base"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn_send_gift_bac"
+                android:minHeight="0dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="发送"
+                android:textColor="@color/white"
+                android:textSize="@dimen/res_text_m" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/view_continue_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/ll_send_gift_all"
+        android:layout_alignBottom="@+id/ll_send_gift_all"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="@dimen/dp_4"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_continue_number"
+            style="@style/res.Text.Shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_marginRight="@dimen/dp_4"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/view_click_continue_send"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_btn_circle_blue_to_green"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/res.Text.Shadow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="连发"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_count_down_number"
+                style="@style/res.Text.Shadow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

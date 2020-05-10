@@ -1,0 +1,104 @@
+<resources>
+
+    <!-- 重写 -->
+    <dimen name="height_title_bar">@dimen/res_height_title_bar</dimen>
+    <dimen name="text_title_bar">@dimen/res_text_title_bar</dimen>
+    <dimen name="text_sub_title_bar">@dimen/res_text_sub_title_bar</dimen>
+
+    <dimen name="width_title_item">@dimen/res_width_title_item</dimen>
+    <dimen name="width_title_item_image">@dimen/res_width_title_item_image</dimen>
+    <dimen name="height_title_item_image">@dimen/res_height_title_item_image</dimen>
+
+
+    <!-- 首页底部菜单栏高度 -->
+    <dimen name="height_live_main_bottom_bar">61dp</dimen>
+
+    <!-- 首页底部菜单栏图片宽度 -->
+    <dimen name="width_live_main_bottom_tab_image">25dp</dimen>
+    <!-- 首页底部菜单栏图片高度 -->
+    <dimen name="height_live_main_bottom_tab_image">25dp</dimen>
+
+    <!-- 直播间底部栏宽度 -->
+    <dimen name="height_live_bottom_bar">55dp</dimen>
+    <!-- 直播间底部菜单宽度 -->
+    <dimen name="width_live_bottom_menu">35dp</dimen>
+    <!-- 直播间底部菜单高度 -->
+    <dimen name="height_live_bottom_menu">45dp</dimen>
+
+    <!-- 直播间底部菜单图标宽度 -->
+    <dimen name="width_live_bottom_menu_image">35dp</dimen>
+    <!-- 直播间底部菜单图标高度 -->
+    <dimen name="height_live_bottom_menu_image">35dp</dimen>
+    <!-- 直播间底部菜单间距 -->
+    <dimen name="margin_live_bottom_menu">5dp</dimen>
+
+    <!-- 直播间观众列表头像宽度 -->
+    <dimen name="width_live_viewer_head_image">30dp</dimen>
+    <!-- 直播间观众列表头像高度 -->
+    <dimen name="height_live_viewer_head_image">30dp</dimen>
+
+    <dimen name="height_live_search_bar">40dp</dimen>
+
+    <dimen name="height_photo_view">10dip</dimen>
+
+    <!-- 指示器间距 -->
+    <dimen name="lib_vpg_indicator_margin">10dp</dimen>
+
+    <!--个人中心和他人个人中心-->
+    <!--向右箭头大小-->
+    <dimen name="width_arrow_right">6dp</dimen>
+    <dimen name="height_arrow_right">11dp</dimen>
+    <!--我的页面字体大小-->
+    <dimen name="text_mine_size">12sp</dimen>
+
+    <!-- OSChina APP -->
+    <dimen name="text_size_32">32.0dip</dimen>
+    <dimen name="text_size_31">31.0dip</dimen>
+    <dimen name="text_size_30">30.0dip</dimen>
+    <dimen name="text_size_29">29.0dip</dimen>
+    <dimen name="text_size_28">28.0dip</dimen>
+    <dimen name="text_size_27">27.0dip</dimen>
+    <dimen name="text_size_26">26.0dip</dimen>
+    <dimen name="text_size_25">25.0dip</dimen>
+    <dimen name="text_size_24">24.0dip</dimen>
+    <dimen name="text_size_23">23.0dip</dimen>
+    <dimen name="text_size_22">22.0dip</dimen>
+    <dimen name="text_size_21">21.0dip</dimen>
+    <dimen name="text_size_20">20.0dip</dimen>
+    <dimen name="text_size_19">19.0dip</dimen>
+    <dimen name="text_size_18">18.0dip</dimen>
+    <dimen name="text_size_17">17.0dip</dimen>
+    <dimen name="text_size_16">16.0dip</dimen>
+    <dimen name="text_size_15">15.0dip</dimen>
+    <dimen name="text_size_14">14.0dip</dimen>
+    <dimen name="text_size_13">13.0dip</dimen>
+    <dimen name="text_size_12">12.0dip</dimen>
+    <dimen name="text_size_11">11.0dip</dimen>
+    <dimen name="text_size_10">10.0dip</dimen>
+    <dimen name="text_size_9">9.0dip</dimen>
+    <dimen name="text_size_8">8.0dip</dimen>
+    <dimen name="text_size_7">7.0dip</dimen>
+    <dimen name="text_size_6">6.0dip</dimen>
+    <dimen name="text_size_5">5.0dip</dimen>
+    <dimen name="text_size_4">4.0dip</dimen>
+    <dimen name="text_size_3">3.0dip</dimen>
+    <dimen name="text_size_2">2.0dip</dimen>
+    <dimen name="text_size_1">1.0dip</dimen>
+    <dimen name="pp_sound_item_length">116.5dp</dimen>
+
+
+    <!-- UGC*******************************************************************************************************************************-->
+    <dimen name="ugc_aspect_width">50dp</dimen>
+    <dimen name="ugc_aspect_divider">18dp</dimen>
+    <dimen name="ugc_progress_cursor">2dp</dimen>
+    <dimen name="ugc_progress_min_pos">2dp</dimen>
+    <dimen name="ugc_progress_divider">1dp</dimen>
+
+    <!-- 视频进度条 -->
+    <dimen name="video_progress_height">50dp</dimen>
+    <dimen name="video_thumbnail_width">50dp</dimen>
+    <dimen name="repeat_slider_width">26dp</dimen>
+    <!-- UGC*******************************************************************************************************************************-->
+
+    <dimen name="ugc_item_thumb_height">60dp</dimen>
+</resources>

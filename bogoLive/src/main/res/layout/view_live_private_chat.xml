@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/top_title_ll"
+            layout="@layout/include_title_simple" />
+
+        <com.fanwe.lib.pulltorefresh.SDPullToRefreshView
+            android:id="@id/view_pull_to_refresh"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/bottom_utils_ll"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top_title_ll"
+            android:layout_weight="1"
+            android:background="@color/res_bg_activity">
+
+            <com.bogokj.library.view.SDRecyclerView
+                android:id="@+id/lv_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.fanwe.lib.pulltorefresh.SDPullToRefreshView>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/bottom_utils_ll"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.bogokj.live.appview.LivePrivateChatBarView
+                android:id="@+id/view_chat_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- 底部扩展布局 -->
+            <com.bogokj.library.view.SDReplaceableLayout
+                android:id="@+id/fl_bottom_extend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <com.bogokj.live.appview.LivePrivateChatRecordView
+        android:id="@+id/view_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/live_viewer_join_back_ll"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/enter_room_back"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_user"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp">
+
+            <ImageView
+                android:id="@+id/user_vip_head_img_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:visibility="gone" />
+
+            <com.bogokj.library.view.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_pic"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/bg_head_image_loading"
+                app:civ_border_color="@color/res_second_color"
+                app:civ_border_width="1dp" />
+
+        </RelativeLayout>
+
+
+
+        <ImageView
+            android:id="@+id/iv_rank"
+            android:layout_width="38dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/rank_1" />
+
+        <ImageView
+            android:id="@+id/iv_vip"
+            android:layout_width="50dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"
+            android:src="@drawable/icon_msg_vip"/>
+        <ImageView
+            android:id="@+id/iv_guard"
+            android:layout_width="50dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/guard_icon"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/iv_level_num"
+            style="@style/res.Text.Shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/live_username_viewer"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="级"
+            android:textColor="@color/live_username_viewer"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            style="@style/res.Text.Shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:maxWidth="150dp"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/res_text_m" />
+
+        <TextView
+            style="@style/res.Text.Shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="进入了房间!"
+            android:textColor="#ffe43f"
+            android:textSize="@dimen/res_text_m" />
+    </LinearLayout>
+
+</LinearLayout>

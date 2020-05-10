@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.bogokj.library.view.CircleImageView
+        android:id="@+id/item_noble_head_civ"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:src="@drawable/bg_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_noble_nickname_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="248dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/item_noble_head_civ"
+        app:layout_constraintEnd_toStartOf="@+id/item_noble_level_iv"
+        app:layout_constraintStart_toEndOf="@+id/item_noble_head_civ"
+        app:layout_constraintTop_toTopOf="@+id/item_noble_head_civ" />
+
+    <ImageView
+        android:id="@+id/item_noble_level_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:src="@mipmap/live_noble_bronze_img"
+        app:layout_constraintBottom_toBottomOf="@+id/item_noble_nickname_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/item_noble_nickname_tv" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_marginStart="60dp"
+        android:background="#f2f2f2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_noble_head_civ" />
+
+
+</android.support.constraint.ConstraintLayout>

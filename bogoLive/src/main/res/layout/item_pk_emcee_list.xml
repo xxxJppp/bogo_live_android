@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/black_15161D"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.bogokj.library.view.CircleImageView
+                android:id="@+id/item_tv_avatar"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/bg_head_image_loading" />
+
+            <TextView
+                android:id="@+id/item_tv_nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/res_loading"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/iv_global_male"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_global_female" />
+
+            <ImageView
+                android:id="@+id/iv_rank"
+                android:layout_width="26dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="5dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_btn_gradient_blue_to_green"
+            android:gravity="center"
+            android:text="发起PK"
+            android:textColor="@color/white"
+
+            />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="#1E1F25" />
+</RelativeLayout>

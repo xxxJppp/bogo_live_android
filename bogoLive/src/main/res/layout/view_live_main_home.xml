@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/main_bac"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.bogokj.live.appview.title.LiveMainHomeTitleView
+            android:id="@+id/view_title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/res_height_title_bar"
+            android:layout_below="@+id/view_title"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+
+            <net.lucode.hackware.magicindicator.MagicIndicator
+                android:id="@+id/tab_page_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.fanwe.lib.viewpager.SDViewPager
+        android:id="@+id/vpg_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

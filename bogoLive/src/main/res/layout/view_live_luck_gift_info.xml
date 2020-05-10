@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/luck_gift_framelayut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_rank"
+                    android:layout_width="32dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/rank_1" />
+
+                <ImageView
+                    android:id="@+id/iv_guard"
+                    android:layout_width="50dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/guard_icon"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/res.Text.Shadow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="冯老师"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/luck_gift_icon"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    style="@style/res.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="1dp"
+                    android:text="送出小红帽X10个 中奖500倍"
+                    android:textColor="@color/live_pop_msg_content"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.bogokj.library.view.CircleImageView
+            android:id="@+id/iv_head"
+            app:civ_border_color="@color/res_main_color"
+            app:civ_border_width="1dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|left"
+            android:src="@drawable/bg_head_image_loading"
+            android:visibility="visible" />
+
+    </FrameLayout>
+</RelativeLayout>

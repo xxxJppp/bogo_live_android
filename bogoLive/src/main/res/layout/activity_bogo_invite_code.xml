@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="clickUtils"
+            type="com.bogokj.live.activity.BogoInviteCodeActivity.ClickClass" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+
+        <LinearLayout
+            android:id="@+id/ll_account_and_safety"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/res_sel_white_gray_strokeb"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="邀请码"
+                android:textColor="@color/res_text_gray_l" />
+
+            <EditText
+                android:id="@+id/invite_code_et"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_weight="3"
+                android:background="@null"
+                android:hint="请输入邀请码"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/self_side_purple_twenty_cornor_bac"
+            android:onClick="@{()->clickUtils.clickConfirm()}"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="10dp"
+            android:text="提交"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</layout>

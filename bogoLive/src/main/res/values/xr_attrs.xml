@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="XRSimpleCircleView">
+        <attr name="bg_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="XRMarkTitleItemView">
+        <attr name="item_icon" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="sparkbutton">
+        <attr name="sparkbutton_iconSize" format="dimension|reference" />
+        <attr name="sparkbutton_activeImage" format="reference" />
+        <attr name="sparkbutton_inActiveImage" format="reference" />
+        <attr name="sparkbutton_primaryColor" format="reference" />
+        <attr name="sparkbutton_secondaryColor" format="reference" />
+        <attr name="sparkbutton_pressOnTouch" format="boolean" />
+        <attr name="sparkbutton_animationSpeed" format="float" />
+        <attr name="sparkbutton_activeImageTint" format="reference" />
+        <attr name="sparkbutton_inActiveImageTint" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="RangeSlider">
+        <attr name="lineHeight" format="dimension" />
+        <attr name="thumbWidth" format="dimension" />
+        <attr name="lineColor" format="color" />
+        <attr name="maskColor" format="color" />
+        <attr name="tickCount" format="integer" />
+        <attr name="leftThumbIndex" format="integer" />
+        <attr name="rightThumbIndex" format="integer" />
+        <attr name="leftThumbDrawable" format="reference" />
+        <attr name="rightThumbDrawable" format="reference" />
+        <attr name="midThumbDrawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="TCReversalSeekBar">
+        <attr name="rs_pointerBackground" format="reference" />
+        <attr name="rs_backgroundColor" format="color" />
+        <attr name="rs_progressColor" format="color" />
+        <attr name="rs_progress" format="float" />
+    </declare-styleable>
+</resources>

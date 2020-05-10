@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:textSize="16sp"
+            android:text="约战pk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:background="@color/divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+           android:layout_centerInParent="true"
+            >
+            <com.bogokj.library.view.CircleImageView
+                android:id="@+id/iv_myhead"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/bg_head_image_loading"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp"/>
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+               android:src="@drawable/bg_over_pk_middle"
+               />
+            <com.bogokj.library.view.CircleImageView
+                android:id="@+id/iv_userhead"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/bg_head_image_loading"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+       <TextView
+           android:id="@+id/tv_over_pk"
+           android:layout_width="250dp"
+           android:layout_height="40dp"
+           android:text="结束PK"
+           android:gravity="center"
+           android:textColor="@color/white"
+           android:textSize="16sp"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="20dp"
+           android:background="@drawable/bg_over_pk_text"
+           />
+</LinearLayout>

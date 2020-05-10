@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    zpb_padding	背景与进度之间的内间距大小	dimension-->
+    <!--    zpb_second_pb_color	二级进度背景颜色	color-->
+    <!--    zpb_bg_color	背景颜色	color-->
+    <!--    zpb_pb_color	进度颜色	color-->
+    <!--    zpb_max	进度最大值	int-->
+    <!--    zpb_progress	默认进度值	int-->
+    <!--    zpb_second_progress	二级进度默认进度值	int-->
+    <!--    zpb_open_gradient	是否使用渐变色	boolean-->
+    <!--    zpb_show_zero_point	进度为0时是否显示圆点	boolean-->
+    <!--    zpb_gradient_from	开始渐变颜色	color-->
+    <!--    zpb_gradient_to	结束渐变颜色	color-->
+    <!--    zpb_show_second_progress	二级进度是否显示	boolean-->
+    <!--    zpb_open_second_gradient	二级进度是否使用渐变色	boolean-->
+    <!--    zpb_second_gradient_from	二级进度开始渐变颜色	color-->
+    <!--    zpb_second_gradient_to	二级进度结束渐变颜色	color-->
+    <!--    zpb_show_second_point_shape	二级进度形状（point,line）	enum-->
+    <!--    zpb_show_mode	显示进度的模式(round,rect,round_rect)	enum-->
+    <!--    zpb_round_rect_radius	round_rect模式下圆角的半径	dimension-->
+    <!--    zpb_draw_border	是否画边框	boolean-->
+    <!--    zpb_border_width	边框的线宽	dimension-->
+    <!--    zpb_border_color	边框的颜色	color-->
+
+    <declare-styleable name="ZzHorizontalProgressBar">
+        <attr name="zpb_padding" format="dimension" />
+        <attr name="zpb_bg_color" format="color|reference" />
+        <attr name="zpb_pb_color" format="color|reference" />
+        <attr name="zpb_second_pb_color" format="color|reference" />
+        <attr name="zpb_max" format="integer" />
+        <attr name="zpb_progress" format="integer" />
+        <attr name="zpb_show_zero_point" format="boolean" />
+        <attr name="zpb_show_second_progress" format="boolean" />
+        <attr name="zpb_second_progress" format="integer" />
+        <attr name="zpb_show_second_point_shape" format="enum">
+            <enum name="point" value="0" />
+            <enum name="line" value="1" />
+        </attr>
+        <attr name="zpb_open_gradient" format="boolean" />
+        <attr name="zpb_gradient_from" format="color|reference" />
+        <attr name="zpb_gradient_to" format="color|reference" />
+        <attr name="zpb_open_second_gradient" format="boolean" />
+        <attr name="zpb_second_gradient_from" format="color|reference" />
+        <attr name="zpb_second_gradient_to" format="color|reference" />
+        <attr name="zpb_show_mode" format="enum">
+            <enum name="round" value="0" />
+            <enum name="rect" value="1" />
+            <enum name="round_rect" value="2" />
+        </attr>
+        <attr name="zpb_round_rect_radius" format="dimension|reference" />
+        <attr name="zpb_draw_border" format="boolean" />
+        <attr name="zpb_border_width" format="dimension|reference" />
+        <attr name="zpb_border_color" format="color|reference" />
+
+    </declare-styleable>
+
+
+
+    <declare-styleable name="EasyLayoutScroll">
+        <!--布局切换间隔-->
+        <attr name="interval" format="integer"></attr>
+        <!--动画执行时间-->
+        <attr name="duration" format="integer"></attr>
+        <!--设置动画渐变效果-->
+        <attr name="gradient" format="boolean"></attr>
+    </declare-styleable>
+</resources>

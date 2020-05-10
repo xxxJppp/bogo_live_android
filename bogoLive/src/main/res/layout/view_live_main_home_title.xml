@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:id="@+id/view_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:background="@mipmap/main_search_bac">
+
+        <ImageView
+            android:id="@+id/search_left_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_search_white_title" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/search_left_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:textColor="#fff3e5fd"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/view_new_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_private_chat_tab_live_title" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/view_ranking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/view_new_msg">
+
+        <ImageView
+            android:layout_width="@dimen/res_width_title_item_image"
+            android:layout_height="@dimen/res_height_title_item_image"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_ranking" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/view_select_live"
+        android:layout_width="@dimen/res_width_title_item"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/view_ranking"
+        android:background="@drawable/res_sel_white_gray"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/res_width_title_item_image"
+            android:layout_height="@dimen/res_height_title_item_image"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_select_live_home_title" />
+
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_live"
+        android:layout_width="@dimen/res_width_title_item_image"
+        android:layout_height="@dimen/res_height_title_item_image"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_create_live"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

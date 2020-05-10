@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- gif动画 -->
+    <com.bogokj.live.appview.room.RoomGiftGifView
+        android:id="@+id/fl_live_gift_gif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <com.bogokj.live.appview.room.RoomInfoView
+        android:id="@+id/fl_live_room_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+
+<!--    &lt;!&ndash;竞拍排名倒计时&ndash;&gt;-->
+<!--    <com.bogokj.auction.appview.AuctionUserRanklistView-->
+<!--        android:visibility="gone"-->
+<!--        android:id="@+id/fl_live_auction_rank_list"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/fl_live_led_task"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_marginTop="10dp" />-->
+
+
+<!--    <com.bogokj.auction.appview.room.RoomAuctionInfoCountdownView-->
+<!--        android:visibility="gone"-->
+<!--        android:id="@+id/fl_live_auction_countdown"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/fl_live_led_task"-->
+<!--        android:layout_alignParentRight="true" />-->
+
+
+<!--    &lt;!&ndash;竞拍,上庄&ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:visibility="gone"-->
+<!--        android:id="@+id/ll_auction_banker"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/fl_live_room_info"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:orientation="vertical">-->
+<!--        &lt;!&ndash;竞拍信息最高价&ndash;&gt;-->
+<!--        <com.bogokj.auction.appview.room.RoomAuctionInfoView-->
+<!--            android:id="@+id/fl_live_auction_info"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content" />-->
+
+
+<!--        &lt;!&ndash; 上庄信息&ndash;&gt;-->
+        <com.bogokj.live.appview.room.RoomGameBankerView
+            android:visibility="gone"
+            android:id="@+id/fl_container_banker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+<!--    </LinearLayout>-->
+
+    <!--主播付费模式-->
+    <com.bogokj.pay.room.RoomLiveScenePayInfoView
+        android:id="@+id/fl_live_pay_mode"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+
+    <!-- 弹幕 -->
+    <com.bogokj.live.appview.room.RoomPopMsgView
+        android:id="@+id/fl_live_pop_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fl_live_msg"
+        android:layout_marginBottom="10dp" />
+
+
+<!--    &lt;!&ndash;购物商品推送&ndash;&gt;-->
+<!--    <com.bogokj.shop.appview.room.RoomShopGoodsPushView-->
+<!--        android:id="@+id/fl_live_goods_push"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:visibility="gone"-->
+<!--        android:layout_above="@+id/fl_live_viewer_join_room"-->
+<!--        android:layout_marginBottom="10dp" />-->
+
+
+    <!-- 高级用户加入房间特效 -->
+    <com.bogokj.live.appview.room.RoomViewerJoinRoomView
+        android:id="@+id/fl_live_viewer_join_room"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fl_live_msg"
+        android:layout_marginBottom="10dp" />
+
+
+    <!-- 聊天信息 -->
+    <com.bogokj.live.appview.room.RoomMsgView
+        android:id="@+id/fl_live_msg"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/fl_live_bottom_menu_ll" />
+
+    <!-- 礼物横向弹出 -->
+    <com.bogokj.live.appview.room.RoomGiftPlayView
+        android:id="@+id/fl_live_gift_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+
+
+    <RelativeLayout
+        android:id="@+id/fl_live_bottom_menu_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/fl_bottom_extend">
+        <!-- 底部菜单 -->
+        <com.bogokj.live.appview.room.RoomCreaterBottomView
+            android:id="@+id/fl_live_bottom_menu_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <!-- 底部菜单 -->
+        <com.bogokj.live.appview.room.RoomViewerBottomView
+            android:id="@+id/fl_live_bottom_menu_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!-- 发送消息 -->
+    <com.bogokj.live.appview.room.RoomSendMsgView
+        android:id="@+id/fl_live_send_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <!-- 游戏 -->
+    <FrameLayout
+        android:id="@+id/fl_live_games_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
+    <!-- 点亮心心 -->
+    <com.bogokj.live.appview.room.RoomHeartView
+        android:id="@+id/fl_live_heart"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp" />
+
+    <!-- 底部扩展 -->
+    <com.bogokj.library.view.SDReplaceableLayout
+        android:id="@+id/fl_bottom_extend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <!-- 播放音乐 -->
+    <com.bogokj.live.view.LiveDragRelativeLayout
+        android:id="@+id/fl_live_play_music"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <!-- 购买守护者动画 -->
+    <com.bogokj.live.appview.room.RoomBuyGuardianSuccessSVGAPlayView
+        android:id="@+id/fl_live_bug_guardian"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <!--座驾动画 -->
+    <com.bogokj.live.appview.room.RoomCarsSVGAPlayView
+        android:id="@+id/fl_live_cars"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <!-- 幸运礼物 -->
+    <com.bogokj.live.appview.room.RoomLuckGiftView
+        android:id="@+id/fl_live_luck_gift"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <!--声效-->
+    <ImageView
+        android:id="@+id/iv_live_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="150dp"
+        android:src="@drawable/ic_live_sound" />
+
+</RelativeLayout>

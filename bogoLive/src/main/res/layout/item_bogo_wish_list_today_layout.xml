@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/white"
+    app:cardCornerRadius="5dp">
+
+    <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="11dp">
+
+        <TextView
+            android:id="@+id/wish_list_today_wish_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="心愿一"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/wish_list_today_wish_gift_img_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="21dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wish_list_today_wish_num_tv"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/wish_list_today_wish_gift_img_iv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/wish_list_today_wish_gift_img_iv"
+            app:layout_constraintTop_toTopOf="@+id/wish_list_today_wish_gift_img_iv">
+
+            <TextView
+                android:id="@+id/wish_list_today_giftname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="七彩火箭"
+                android:textColor="#ff666666"
+                android:textSize="16sp" />
+
+            <com.bogokj.live.view.ZzHorizontalProgressBar
+                android:id="@+id/wish_list_today_progressbar"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="20dp"
+                app:zpb_bg_color="#d8d8d8"
+                app:zpb_gradient_from="#9D64FF"
+                app:zpb_gradient_to="#F060F6"
+                app:zpb_max="100"
+                app:zpb_open_gradient="true"
+                app:zpb_padding="1px"
+                app:zpb_progress="0"
+                app:zpb_second_pb_color="#f5a623"
+                app:zpb_show_second_point_shape="point"
+                app:zpb_show_second_progress="true" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/wish_list_today_wish_gift_progress_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:text="520/9999"
+            android:textColor="#ff999999"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="#f2f2f2"
+            app:layout_constraintTop_toBottomOf="@+id/wish_list_today_wish_gift_progress_tv"
+            tools:layout_editor_absoluteX="6dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="22dp"
+            android:text="贡献榜"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/wish_list_today_bank_rv"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
